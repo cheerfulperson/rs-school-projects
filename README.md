@@ -5,3 +5,6 @@ This repository contains all the tasks that were completed during the training a
 Below are links to see the applications in action.
 * art-quiz: [deploy](https://cheerfulperson-art-quiz.netlify.app/)
 * momentum: [deploy](https://egor-cheerfulperson-momentum.netlify.app/)
+* HTML-builder solar system: [deploy](https://cute-faun-065161.netlify.app/)
+* CSS mem slider (css + html): [deploy](https://ornate-empanada-e49e76.netlify.app/)
+* Museum (Louvre): [deploy](https://helpful-churros-710fa1.netlify.app/)
