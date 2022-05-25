@@ -1,0 +1,114 @@
+[{
+    "name": "1",
+    "type": "artists",
+    "miniature": "https://raw.githubusercontent.com/cheerfulperson/image-data/master/img/0.jpg",
+    "data": [{
+        "author": "Pavel Fedotov",
+        "name": "Major's matchmaking",
+        "year": "1852",
+        "imageNum": "0",
+        "answer": {
+            "isTrue": true,
+            "author": "Pavel Fedotov"
+        }
+    }, {
+        "author": "Edgar Degas",
+        "name": "Blue Dancers",
+        "year": "1897",
+        "imageNum": "1",
+        "answer": {
+            "isTrue": true,
+            "author": "Edgar Degas"
+        }
+    }, {
+        "author": "Veronese",
+        "name": "Feast at Levi's House",
+        "year": "1563",
+        "imageNum": "2",
+        "answer": {
+            "isTrue": false,
+            "author": "Arkhip Kuindzhi"
+        }
+    }, {
+        "author": "Ilya Repin",
+        "name": "Ivan the Terrible and his son Ivan",
+        "year": "1885",
+        "imageNum": "3",
+        "answer": {
+            "isTrue": false,
+            "author": "Alexey Venetsianov"
+        }
+    }, {
+        "author": "Konstantin Makovsky",
+        "name": "Portrait of Countess Sophia",
+        "year": "1890",
+        "imageNum": "4",
+        "answer": {
+            "isTrue": false,
+            "author": "Alexander Ivanov"
+        }
+    }, {
+        "author": "Vasily Perov",
+        "name": "Arrival of the governess to the merchant's house",
+        "year": "1866",
+        "imageNum": "5",
+        "answer": {
+            "isTrue": false,
+            "author": "Arkhip Kuindzhi"
+        }
+    }, {
+        "author": "Michelangelo",
+        "name": "Creation of Adam",
+        "year": "1511",
+        "imageNum": "6",
+        "answer": {
+            "isTrue": true,
+            "author": "Michelangelo"
+        }
+    }, {
+        "author": "Pierre Auguste Renoir",
+        "name": "Walk in the Bois de Boulogne",
+        "year": "1873",
+        "imageNum": "7",
+        "answer": {
+            "isTrue": false,
+            "author": "Vasily Polenov"
+        }
+    }, {
+        "author": "Jan Vermeer",
+        "name": "Mistress and maid",
+        "year": "1667",
+        "imageNum": "8",
+        "answer": {
+            "isTrue": false,
+            "author": "Paul Gauguin"
+        }
+    }, {
+        "author": "Vasily Polenov",
+        "name": "Moscow courtyard",
+        "year": "1877",
+        "imageNum": "9",
+        "answer": {
+            "isTrue": false,
+            "author": "Pablo Picasso"
+        }
+    }, {
+        "author": "Fedor Vasiliev",
+        "name": "Wet Meadow",
+        "year": "1872",
+        "imageNum": "10",
+        "answer": {
+            "isTrue": false,
+            "author": "Jacques-Louis David"
+        }
+    }, {
+        "author": "Ilya Repin",
+        "name": "Seeing off the recruit",
+        "year": "1879",
+        "imageNum": "11",
+        "answer": {
+            "isTrue": false,
+            "author": "Rene Magritte"
+        }
+    }]
+}]

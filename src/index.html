@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-Equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>ArtQuiz</title>
+</head>
+
+<body>
+    <header id="header" class="header-menu ">
+        <!-- min-head -->
+        <div id="players" class="display-none">
+            <ul>
+                <li id="firstPlayer">
+                    <img class="you" src="./assets/img/player1.jpg" alt="">
+                    <p>player1</p>
+                    <div class="score-user">0</div>
+                </li>
+                <li class="text">
+                    <h3>vs</h3>
+                </li>
+                <li id="seconedPlayer">
+                    <p>player2</p>
+                    <img src="./assets/img/player2.jpg" alt="">
+                    <div class="score-user">0</div>
+                </li>
+            </ul>
+        </div>
+        <div id="logo" class="logo"><img src="./assets/img/logo.png" alt=""></div>
+        <div id="gameHeader" class="game-header display-none">
+            <img id="gameLogo" src="./assets/img/logo.png" alt="">
+            <h2>who os the author of this picture?</h2>
+            <div id="gameTimer" class="game-timer 'display-none">
+                <div class="clock">
+                    <img src="./assets/svg/clock.svg" alt="">
+                    <div class="clock-arrow"></div>
+                </div>
+                <time></time>
+            </div>
+        </div>
+        <nav id="navigation" class="navigation">
+            <ul class="navigation-list">
+                <li class="left-btn display-none">
+                    <button id="btnToHome" type="button">
+                        <img src="./assets/svg/home-i.svg" alt="">
+                        <span>Home</span>
+                    </button>
+                </li>
+                <li class="title-list-item">
+                    <h2 id="title">&nbsp;</h2>
+                </li>
+                <li class="right-btn display-none">
+                    <button id="btnToScore" type="button">
+                        <img src="./assets/svg/star.svg" alt="">
+                        <span class="page-title">score</span>
+                    </button>
+                </li>
+                <li class="right-btn display-none">
+                    <button id="btnToCategories" type="button">
+                        <img src="./assets/svg/category.svg" alt="">
+                        <span class="page-title">categories</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="">
+        <!-- max-main -->
+        <div id="modalW" class="modal-win display-none">
+            <div class="window">
+                <h2>Please, wait... </h2>
+                <p class="online"><strong>Online: </strong><span class="data"></span></p>
+                <p><strong>Attention:</strong>
+                    To check the online game, go to this application from another browser or device.</p>
+                <button id="leaveOnlineGame">leave</button>
+            </div>
+        </div>
+        <div id="mainContent" class="container">
+
+            <!-- class container -->
+            <section id="startContent" class="">
+                <div id="artistQuizBtn" class="container-item ">
+                    <img src="./assets/img/jeck.jpg" alt="">
+                    <h2><b>ARTISTS</b> QUIZ</h2>
+                </div>
+                <div id="onlineQuizBtn" class="container-item buttle">
+                    <img src="./assets/img/7560c52894ba3abe2aed670f19fc2759.jpg" alt="">
+                    <h2><b>BUTTLE</b></h2>
+                </div>
+                <div id="picturesQuizBtn" class="container-item">
+                    <img src="./assets/img/mona.jpg" alt="">
+                    <h2 class=" text-l"><b>PICTURES</b> QUIZ</h2>
+                </div>
+
+            </section>
+            <section id="categoryPage" class="display-none">
+                <div class="content grid-table-content"></div>
+                <div class="btn-to-down display-none"><img src="./assets/svg/down.svg" alt=""></div>
+            </section>
+            <section id="settingContent" class="display-none">
+                <div class="settings-item ">
+                    <img class="volume-title-icon vl" src="./assets/svg/settings-volume.svg" alt="">
+                    <div class="set-input">
+                        <input id="volume" name="volume" max="100" type="range">
+                    </div>
+                    <h2><b>volume</b></h2>
+                </div>
+                <div class="settings-item">
+                    <img class="volume-title-icon" src="./assets/svg/timer.svg" alt="">
+                    <div class="set-input">
+                        <div id="temerAmountValue" class="value">5</div>
+                        <input id="timeAmountSecondes" disabled type="range" min="5" max="30" step="5" value="5">
+                        <input id="timerBox" name="timerBox" max="100" type="checkbox">
+                        <label for="timerBox">
+                            ON/OFF
+                        </label>
+
+                    </div>
+                    <h2><b>time game</b></h2>
+                </div>
+            </section>
+            <section id="gameRoom" class="display-none">
+                <div class="game-item">
+                    <div class="bullets">
+                    </div>
+                    <div id="gameMainMedia" class="main-media">
+                        <img id="gameMainImage" src="" class="art" alt="">
+                    </div>
+                    <div id="answerList" class="answers-list">
+                        <ul></ul>
+                    </div>
+                </div>
+            </section>
+            <section id="scorePage" class="display-none">
+                <div class="content grid-table-content"></div>
+                <div class="btn-to-down display-none"><img src="./assets/svg/down.svg" alt=""></div>
+            </section>
+            <section id="resultsRoom" class="display-none">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Picture</th>
+                            <th>Picture Name</th>
+                            <th>Author</th>
+                            <th>Year</th>
+                            <th>You</th>
+                            <th>Second Plaer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+    </main>
+    <footer id="footer" class="">
+        <!-- display-none -->
+        <div class="footer-buttons">
+            <ul id="scoreFooter" class="display-none">
+                <li class=""><button id="prevScorePage" class="pretty-btn">&#60;&#60;</button></li>
+                <li class="fix-size">
+                    <p><span class="current"></span> / <span class="count"></span></p>
+                </li>
+                <li class=""><button id="nextScorePage" class="pretty-btn">>></button></li>
+            </ul>
+            <ul id="footerButtonsList">
+                <li class="display-none"><button id="saveSettingsBtn" class="pretty-btn">save</button></li>
+                <li class="display-none"><button id="setSettingsDefault" class="pretty-btn">defaults</button></li>
+                <li><button id="openSettingsBtn" class="pretty-btn rotate-icon"><img src="./assets/svg/settings.svg"
+                            alt="">SETTINGS</button></li>
+            </ul>
+        </div>
+        <div id="contacts" class="contacts">
+            <ul>
+                <li><span>2021</span></li>
+                <li><a href="https://github.com/cheerfulperson">cheerfulperson</a></li>
+                <li><button class="player-icon rss-school" onclick="document.location='https://rs.school/'"></button>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

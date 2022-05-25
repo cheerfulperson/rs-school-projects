@@ -1,0 +1,52 @@
+{
+  "name": "pack",
+  "version": "1.0.0",
+  "description": "egor config",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_MODE=development webpack --mode development",
+    "build": "cross-env NODE_MODE=production webpack --mode production",
+    "start": "cross-env NODE_MODE=development webpack-dev-server --mode development --open",
+    "watch": "cross-env NODE_MODE=development webpack --mode development --watch",
+    "lint": "eslint . --ext .js --fix",
+    "serv": "nodemon ./server/app.js"
+  },
+  "keywords": [
+    "js",
+    "webpack"
+  ],
+  "author": "Egor",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.1.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-webpack-plugin": "^3.1.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.4",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.2.4",
+    "webpack": "^5.62.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.3.2",
+    "ws": "^8.2.3"
+  }
+}

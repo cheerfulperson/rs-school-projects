@@ -1,0 +1,23 @@
+{
+  "name": "pack",
+  "version": "1.0.0",
+  "description": "egor config",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "js",
+    "webpack"
+  ],
+  "author": "Egor",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.3.2",
+    "ws": "^8.2.3"
+  }
+}

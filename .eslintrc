@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "eslint-config-airbnb",
+    "eslint-config-airbnb-base"
+  ],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.js"],
+      "rules": {
+        "quotes": [2, "single"]
+      }
+    }
+  ],
+  "env": {
+    "es6": true,
+    "browser": true
+  }
+}
