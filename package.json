@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "description": "My new js application",
+  "private": true,
+  "name": "momentum",
+  "type": "module",
+  "scripts": {
+    "start": "rss-scripts start",
+    "build": "rss-scripts build"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "rss-scripts": "^0.2.4"
+  },
+  "dependencies": {
+    "i18next": "^21.3.3"
+  }
+}

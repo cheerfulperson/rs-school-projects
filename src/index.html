@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>momentum</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div id="audio" class="player">
+        <div class="player-controls">
+          <button id="playPrevBtn" class="play-prev player-icon"></button>
+          <button id="playBtn" class="play play-btn player-icon"></button>
+          <button id="playNextBtn" class="play-next player-icon"></button>
+          <div class="progress-bar">
+            <label id="songName"></label>
+            <input
+              id="songProgress"
+              name="progress"
+              type="range"
+              max="100"
+              min="0"
+              value="0"
+            />
+            <div>
+              <span id="currentDuraction">0:00</span>/<span
+                id="allDuraction"
+              ></span>
+            </div>
+          </div>
+          <div class="volume-block">
+            <button
+              id="volumeBtn"
+              class="player-icon play-song volume-on"
+            ></button>
+            <input id="volume" type="range" max="100" min="0" value="30" />
+          </div>
+        </div>
+        <ul id="playList" class="play-list"></ul>
+      </div>
+      <div id="weather" class="weather">
+        <input id="weatherValue" type="text" class="city" />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+      <time id="time" class="time">
+        <span id="hours">00</span>:<span id="minuts">00</span>:<span
+          id="secondes"
+          >00</span
+        >
+      </time>
+      <date id="date" class="date"></date>
+      <div id="greeting" class="greeting-container">
+        <span class="greeting"></span>
+        <input id="name" type="text" class="name" placeholder="[Enter name]" />
+      </div>
+    </main>
+    <div id="settings" class="settings-body">
+      <div id="languageS" class="language custom-select">
+        <h2 class="title">Language</h2>
+        <div class="select">
+          <select id="language">
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+          </select>
+        </div>
+        <hr />
+      </div>
+      <div id="photoS" class="photo-source">
+        <h2 class="title">Photo source</h2>
+        <div id="progressLoad" class=""></div>
+        <fieldset>
+          <p>Collection of images</p>
+
+          <input type="radio" id="github" name="photoSource" checked />
+          <label class="github" for="github">Git Hub</label><br />
+
+          <input type="radio" id="unsplash" name="photoSource" />
+          <label class="unsplash" for="unsplash">Unsplash API</label><br />
+
+          <input type="radio" id="flickr" name="photoSource" />
+          <label class="flickr" for="flickr">Flickr API</label>
+        </fieldset>
+
+        <div id="tagP">
+          <label for="pKeyword">Photo Keyword: </label>
+          <input id="iKeyword" name="pKeyword" type="text" />
+        </div>
+      </div>
+      <hr />
+      <div id="generalS" class="general">
+        <h2 class="title">General</h2>
+        <p class="pre-title">Customize your dashbored</p>
+        <h3 class="links-title">Show</h3>
+        <ul>
+          <li id="dateS">
+            <div class="text">Date</div>
+            <label class="switch">
+              <input type="checkbox" value="date" checked />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li id="timeS">
+            <div class="text">Time</div>
+            <label class="switch">
+              <input type="checkbox" value="time" checked />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li id="greetingS">
+            <div class="text">Greeting</div>
+            <label class="switch">
+              <input type="checkbox" value="greeting" checked />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li id="quoteS">
+            <div class="text">Quote of the day</div>
+            <label class="switch">
+              <input type="checkbox" value="quote" checked />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li id="weatherS">
+            <div class="text">Weather forecast</div>
+            <label class="switch">
+              <input type="checkbox" value="weather" checked />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li id="audioS">
+            <div class="text">Audio player</div>
+            <label class="switch">
+              <input type="checkbox" value="audio" checked />
+              <span class="slider round"></span>
+            </label>
+          </li>
+          <li id="listS">
+            <div class="text">To-do list</div>
+            <label class="switch">
+              <input type="checkbox" value="todoList" checked />
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="settings-btn">
+        <button class="player-icon settings-icon"></button>
+      </div>
+      <div id="quote">
+        <button class="change-quote"></button>
+        <div>
+          <div class="quote"></div>
+          <div class="author"></div>
+        </div>
+      </div>
+      <div id="todoList">
+        <div class="todo-form">
+          <section class="header-todo">
+            <button id="dropbtn" class="dropbtn">
+              <span class="text">Inbox</span>...
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <button id="inbox">
+                <span class="text">Inbox</span> <span class="count"></span>
+              </button>
+              <button id="today">
+                <span class="text">Today</span> <span class="count"></span>
+              </button>
+              <button id="done">
+                <span class="text">Archive</span> <span class="count"></span>
+              </button>
+            </div>
+            <hr />
+          </section>
+          <section class="todo-body">
+            <p class="text">Add a todo to get started</p>
+            <button id="btnAddTodo" class="btnAddTodo">New ToDo</button>
+          </section>
+          <div class="todo-input">
+            <input placeholder="Write your todo" type="text" />
+          </div>
+        </div>
+        <div class="todo-btn">
+          <button class="player-icon">Todo</button>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="./script/general.script.js"></script>
+  <script src="./script/player.audio.js"></script> -->
+    <script src="./index.js"></script>
+  </body>
+</html>

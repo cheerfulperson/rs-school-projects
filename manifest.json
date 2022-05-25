@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Momentum app",
+  "description": "https://egor-cheerfulperson-momentum.netlify.app/",
+  "version": "1.0",
+  "icons": {
+    "128": "./assets/favicon.ico"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "unlimitedStorage"
+  ]
+}
