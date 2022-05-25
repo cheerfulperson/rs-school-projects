@@ -8,3 +8,4 @@ Below are links to see the applications in action.
 * HTML-builder solar system: [deploy](https://cute-faun-065161.netlify.app/)
 * CSS mem slider (css + html): [deploy](https://ornate-empanada-e49e76.netlify.app/)
 * Museum (Louvre): [deploy](https://helpful-churros-710fa1.netlify.app/)
+* news: ![image](https://user-images.githubusercontent.com/43146047/170386600-1d97122d-d275-48fb-a112-caed272aeff5.png)
