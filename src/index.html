@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>NewsPortal</title>
+    </head>
+    <body>
+        <header>
+            <h1>News Portal</h1>
+        </header>
+        <main>
+            <section class="sourses-sect">
+                <div class="search">
+                    <input class="search__item-input" 
+                           type="text"
+                           name="search-input"
+                           id="searchSources"
+                           placeholder="Search...">
+                </div>
+                <div class="sources buttons"></div>
+            </section>
+            <section class="news-sect">
+                <h2 class="news-sect__title"></h2>
+                <div class="news"></div>
+            </section>
+        </main>
+        <footer>
+            <ul class="info">
+                <li class="info__item">
+                    <span>2021</span>
+                </li>
+                <li class="info__item">
+                    <a class="info__item-git" 
+                       href="https://github.com/cheerfulperson">cheerfulperson</a>
+                </li>
+                <li class="info__item">
+                    <a href="https://rs.school/">
+                        <img class="info__item-rss-logo" 
+                         src="https://rollingscopes.com/images/logo_rs_text.svg" 
+                         alt="Rss logo"></a>
+                </li>
+            </ul>
+            <p class="copyright">
+                Copyright <a href="https://newsapi.org">NewsAPI</a>
+            </p>
+        </footer>
+
+        <template id="sourceItemTemp">
+            <div class="source__item">
+                <span class="source__item-name"></span>
+            </div>
+        </template>
+
+        <template id="newsItemTemp">
+            <div class="news__item">
+                <div class="news__meta">
+                    <div class="news__meta-photo"></div>
+                    <ul class="news__meta-details">
+                        <li class="news__meta-author"></li>
+                        <li class="news__meta-date"></li>
+                    </ul>
+                </div>
+                <div class="news__description">
+                    <h2 class="news__description-title"></h2>
+                    <h3 class="news__description-source"></h3>
+                    <p class="news__description-content"></p>
+                    <p class="news__read-more">
+                        <a href="#">Read More</a>
+                    </p>
+                    <button class="news__description-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </template>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+    background: #17181c;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 10px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .copyright {
+    display: block;
+    font-size: 14px;
+    text-align: right;
+}
+
+footer .info {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+footer .info .info__item {
+    margin: 5px;
+}
+
+footer .info .info__item-git {
+    color: #444;
+    margin: 5px;
+}
+
+footer .info .info__item-git:hover {
+    color: #555;
+}
+
+footer .info .info__item-rss-logo {
+    max-width: 50px;
+}
+
+footer .copyright a {
+    color: #444;
+}
+
+footer .copyright a:hover {
+    color: #555;
+}
+
+footer .copyright:before {
+    content: '©';
+}
